@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>  Student Activity Tracker Dashboard </title>
+
+        <link rel="stylesheet" href="Tracker.css">
+        <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+       <h2>
+    <i class="fa-solid fa-graduation-cap"></i>
+    Student Activity Tracker
+</h2>
+        <div class="container">
+
+         <h3>
+    <i class="fa-solid fa-user-plus"></i>
+    Add New Student
+</h3><br>
+
+      <table id="addtable">
+
+      <tr>
+        <th class="Thead">Name</th>
+        <th class="Thead">Age</th>
+        <th class="Thead">Score</th>
+        <th class="Thead">Student ID(BigInt)</th>
+      </tr>
+
+      <tr>
+
+        <td >
+          <input type="text"
+          id="name"
+          placeholder="Enter Student name"></input>
+        </td>
+
+        <td >
+          <input type="text"
+          id="age"
+          placeholder="Enter Age"
+          maxlength="2">
+        </td>
+
+        <td >
+          <input type="text"
+          id="score"
+          placeholder="Enter Score"
+          maxlength="2">
+        </td>
+
+        <td >
+          <input type="number"
+          id="studentId"
+          placeholder="Enter Student ID">
+        </td>
+
+      </tr>
+
+      </table>
+       <button class="add-btn"id="addBtn"onclick="addStudent()"disabled>+ Add Student</button>
+       <br><br>
+      </div><br>
+    <div class="container">
+
+      
+       <h3 id="List">Students List</h3>
+      <table class="student-table" id="studentTable">
+
+      <tr>
+        <th class="Thead">S.No</th>
+        <th class="Thead">Name</th>
+        <th class="Thead">Age</th>
+        <th class="Thead">Score</th>
+        <th class="Thead">Grade</th>
+        <th class="Thead">Student ID</th>
+        <th class="Thead">Action</th>
+      </tr>
+
+       </table>
+
+      </div>
+     
+    <footer>
+      <div class="pagination">
+
+    <button id="prevBtn" onclick="previousPage()">
+        Previous
+    </button>
+
+    <span id="pageNumber">Page 1</span>
+
+    <button id="nextBtn" onclick="nextPage()">
+        Next
+    </button>
+
+   </div>
+    </footer>  
+        <script src="Student.js"></script>
+    </body>
+</html>
